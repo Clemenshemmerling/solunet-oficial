@@ -1,0 +1,76 @@
+.header
+  background-color #FAFAFA
+  height 64px
+  position fixed
+  top 0
+  left 0
+  width 100%
+  z-index 10
+  line-height 64px
+
+  &-mobile
+    display flex
+    justify-content space-between
+
+  &-logo
+    margin 6px 0 0 4px
+    height 48px
+    width 115px
+    order 1
+
+  &-button-nav
+    margin-right 8px
+    font-size 25px
+    color #5E7785
+    padding 0
+    border 0
+    border-radius 5px
+    background-color #FAFAFA
+    order 2
+
+  &-menu-navbar
+    background-color #FAFAFA
+
+  &-menu-list
+    list-style-type: none
+    height 0
+    overflow hidden
+    transition height .3s ease
+
+    &-item
+      a
+        background-color orange
+        text-decoration none
+        color white
+				width 100%
+				padding 1.5rem
+				display block
+
+@media (min-width 768px)
+	.header
+		display flex
+		flex-direction row
+		flex-wrap wrap
+		justify-content space-between
+		height 80px
+		transition all .3s ease
+		line-height 80px
+
+		&-logo
+			margin-left 2rem
+
+		&-btn-nav
+			display none
+
+		&-menu-list
+			height 80px
+
+
+			&-item
+				display inline-block
+
+				a
+					padding 0 1em
+
+				a:hover
+					color grey
