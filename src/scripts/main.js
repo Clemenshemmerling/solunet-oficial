@@ -1,26 +1,24 @@
+(function () {
+  var loadCSS = require('./lib/loadCSS');
+  var onScroll = require('./lib/onScroll');
+
+  document.addEventListener('DOMContentLoaded', onDOMLoad);
+
+  var headerElem = document.querySelector('.header');
+  headerElem.addEventListener('scroll', onScroll);
 
 
-document.addEventListener('DOMContentLoaded', onDomLoad);
+  function onDOMLoad() {
+    var btnMenu = document.getElementById('btnMenu');
+    var navbarMenu = document.getElementById('navbarMenu');
 
-function onDomLoad (){	
-	var btnMenu = document.getElementById('btnMenu');
-	var navbarMenu = document.getElementById('navbarMenu');
+    btnMenu.addEventListener('click', onClickMenu);
 
-	btnMenu.addEventListener('click', onClickMenu);
+    loadCSS('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css');
 
-	loadCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+    function onClickMenu() {
+      navbarMenu.classList.toggle('header-menu-list--show');
+    }
+  }
 
-
-	function onClickMenu(){
-		navbarMenu.classList.toggle('header-menu-list--show');
-
-	};
-
-	function loadCss (url){
-		var elem = document.createElement('link');
-		elem.rel = 'stylesheet';
-		elem.href = url;
-		document.head.appendChild(elem);
-	};
-	
-};
+}());

@@ -13,9 +13,9 @@
     justify-content space-between
 
   &-logo
-    margin 6px 0 0 4px
-    height 48px
-    width 115px
+    margin-left 4px
+    height 4rem
+    width  11em
     order 1
 
   &-button-nav
@@ -37,40 +37,38 @@
     overflow hidden
     transition height .3s ease
 
+    &--show
+        height 430px
+
     &-item
       a
-        background-color orange
         text-decoration none
-        color white
-				width 100%
-				padding 1.5rem
-				display block
+        color black
+        width 100%
+        padding 0.5rem
+        display block
 
 @media (min-width 768px)
-	.header
-		display flex
-		flex-direction row
-		flex-wrap wrap
-		justify-content space-between
-		height 80px
-		transition all .3s ease
-		line-height 80px
+  .header
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content space-between
+    height 80px
+    transition all .3s ease
+    line-height 80px
 
-		&-logo
-			margin-left 2rem
+    &-logo
+      margin-left 2rem
 
-		&-btn-nav
-			display none
+    &-button-nav
+      display none
 
-		&-menu-list
-			height 80px
+    &-menu-list
+      height 80px
 
+      &-item
+        display inline-block
 
-			&-item
-				display inline-block
-
-				a
-					padding 0 1em
-
-				a:hover
-					color grey
+        a:hover
+          color grey
