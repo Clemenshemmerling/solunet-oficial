@@ -7,13 +7,14 @@
   width 100%
   z-index 10
   line-height 64px
+  opacity 0.9
 
   &-mobile
     display flex
     justify-content space-between
 
   &-logo
-    margin-left 4px
+    margin-left 1rem
     height 4rem
     width  11em
     order 1
@@ -37,10 +38,12 @@
     overflow hidden
     transition height .3s ease
 
+
     &--show
         height 430px
 
     &-item
+
       a
         text-decoration none
         color black
@@ -59,7 +62,7 @@
     line-height 80px
 
     &-logo
-      margin-left 2rem
+      margin-left 3rem
 
     &-button-nav
       display none
@@ -69,6 +72,10 @@
 
       &-item
         display inline-block
+
+        a
+          padding 0 0.4em
+
 
         a:hover
           color grey

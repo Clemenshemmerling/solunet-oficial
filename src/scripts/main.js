@@ -15,6 +15,7 @@
     btnMenu.addEventListener('click', onClickMenu);
 
     loadCSS('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css');
+    loadCSS('https://fonts.googleapis.com/css?family=Muli|Roboto');
 
     function onClickMenu() {
       navbarMenu.classList.toggle('header-menu-list--show');
