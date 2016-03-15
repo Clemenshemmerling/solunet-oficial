@@ -21,16 +21,74 @@
       font-size 2.5rem
       margin 0 auto
       font-weight normal
+      padding-top 1rem
+      font-size 2rem
 
     &-p
       margin 0 auto
       font-size 1.5rem
+      padding-top 1rem
+      font-size 1rem
 
 
 @media (min-width 768px)
-
-  .secOne
+  .sectOne
     display flex
-    margin-top: 5rem
+    flex-direction row
+    margin-top 5rem
 
-  
+
+    &-picture
+      order 2
+      margin 0 auto
+      overflow hidden
+      padding-top 1rem
+
+      img
+        max-width 100%
+
+    &-content
+      order 1
+      margin 0 0 0 3rem
+      max-width 40rem
+
+@media (min-width 1000px)
+  .sectOne
+    display flex
+    flex-direction row
+    margin-top 5rem
+
+    &-picture
+      order 2
+      margin 0 auto
+      overflow hidden
+      padding  0
+
+      img
+        max-width 100%
+
+    &-content
+      order 1
+      padding-top 2rem
+      margin 0 0 0 5rem
+
+@media (min-width 1280px)
+  .sectOne
+    display flex
+    flex-direction row
+    margin 5rem 6rem 0 6rem
+
+
+    &-picture
+      order 2
+      margin 0 auto
+      overflow hidden
+      padding 3rem 0 0 10rem
+      img
+        max-width 100%
+
+    &-content
+      order 1
+      padding 4rem 2rem 0 0
+      margin 0 0 0 5rem
+      max-width 25rem
