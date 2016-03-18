@@ -1,30 +1,84 @@
 .sectionfour
-  background-color #F1CD16
-  margin 1rem 0
-  padding 1rem
+  margin-top 1rem
   font-family Muli
+  background-color #F1CD16
 
-  &-form
+  &-picture
+    display none
+
+  &-divcontent
+    padding 1rem
+
+    &-form
+      display flex
+      flex-direction column
+
+      &-input
+        border-radius 15px
+        font-size 1.5rem
+        margin-bottom 5px
+        border none
+
+      &-textarea
+        border-radius 15px
+        font-size 1.5rem
+        margin-bottom 5px
+        border none
+        min-height 10rem
+
+      &-button
+        color #FAFAFA
+        background-color #3A3A3C
+        border none
+        border-radius 8px
+        max-width 6rem
+        min-height 2.5rem
+        margin-left auto
+
+    &-divtext
+      color #FAFAFA
+      &-h1
+        font-size 1.5rem
+
+      p
+        margin 0.5rem 0
+
+        a
+          text-decoration none
+          color #FAFAFA
+
+@media (min-width 768px)
+  .sectionfour
+    margin 1rem 2rem
     display flex
-    flex-direction column
 
-    &-input
-      border-radius 15px
-      font-size 2rem
-      margin-bottom 5px
-      border none
+    &-picture
+      display block
 
-    &-textarea
-      border-radius 15px
-      font-size 2rem
-      margin-bottom 5px
-      border none
+@media (min-width 960px)
+  .sectionfour
+    margin 1rem 6rem
 
-    &-button
-      color white
-      background-color #3A3A3C
-      border none
-      border-radius 8px
-      max-width 6rem
-      min-height 2.5rem
-      margin-left 14rem
+@media (min-width 1000px)
+  .sectionfour
+    margin 1rem 6rem
+    &-divcontent
+      display flex
+      flex-direction row
+      &-form
+        margin 2rem 0 0 3rem
+        min-width 300px
+
+      &-divtext
+        margin 2rem 2rem
+
+@media (min-width 1280px)
+  .sectionfour
+    margin 1rem 14rem 1rem 12rem
+
+@media (min-width 1440px)
+  .sectionfour
+    margin 1rem 14rem 1rem 13rem
+    &-divcontent
+      &-divtext
+        margin 2rem 3rem

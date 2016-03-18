@@ -18,21 +18,21 @@
       <nav class="header-menu-navbar">
   			<ul class="header-menu-list" id="navbarMenu">
   				<li class="header-menu-list-item">
-  					<a href="">Inicio</a>
+  					<a href="#">Inicio</a>
   				</li>
   				<li class="header-menu-list-item">
-  					<a href="">Servicios individuales</a>
+  					<a href="#sectTwo">Servicios individuales</a>
   				</li>
           <li class="header-menu-list-item">
-  					<a href="">Paquetes</a>
+  					<a href="#secthree">Paquetes</a>
   				</li>
   				<li class="header-menu-list-item">
-  					<a href="">Contacto</a>
+  					<a href="#sectionfour">Contacto</a>
   				</li>
   			</ul>
   		</nav>
     </header>
-    <section class="sectOne">
+    <section class="sectOne" id="sectOne">
       <picture class="sectOne-picture">
         <img src="./img/grafico-1.png" alt="Paginas optimizadas para seo" />
       </picture>
@@ -43,7 +43,7 @@
         </p>
       </div>
     </section>
-    <section class="sectTwo">
+    <section class="sectTwo" id="sectTwo">
       <div class="sectTwo-divOne">
         <h2 class="sectTwo-divOne-h1">Nuestros Servicios</h2>
         <div class="sectTwo-divOne-divtext">
@@ -55,7 +55,7 @@
           </p>
         </div>
       </div>
-      <div class="sectTwo-divTwo">
+      <div class="sectTwo-divTwo" id="secthree">
         <h3 class="sectTwo-divTwo-h1">Servicios individuales</h3>
         <div class="sectTwo-divTwo-divtext">
 
@@ -88,13 +88,24 @@
         </picture>
       </div>
     </section>
-    <section class="sectionfour">
-      <form class="sectionfour-form" name="formulario" method="post" action="conexion.php">
-				<input class="sectionfour-form-input" name="nombre" type="text" placeholder="Nombre" id="nombre">
-				<input class="sectionfour-form-input" name="correo" type="email" placeholder="e-mail" id="correo">
-				<textarea class="sectionfour-form-textarea" name="motivo" placeholder="Motivo" id="motivo"></textarea>
-				<button type="submit" class="sectionfour-form-button">Enviar</button>
-		  </form>
+    <section class="sectionfour" id="sectionfour">
+      <picture class="sectionfour-picture">
+        <img src="./img/contactar.png" alt="Contactanos" />
+      </picture>
+      <div class="sectionfour-divcontent">
+        <form class="sectionfour-divcontent-form" name="formulario" method="post" action="conexion.php">
+          <input class="sectionfour-divcontent-form-input" name="nombre" type="text" placeholder="Nombre" id="nombre">
+          <input class="sectionfour-divcontent-form-input" name="correo" type="email" placeholder="e-mail" id="correo">
+          <textarea class="sectionfour-divcontent-form-textarea" name="motivo" placeholder="Motivo" id="motivo"></textarea>
+          <button type="submit" class="sectionfour-divcontent-form-button">Enviar</button>
+        </form>
+        <div class="sectionfour-divcontent-divtext">
+          <h5 class="sectionfour-divcontent-divtext-h1">Correo</h5>
+          <p>
+            <a href="mailto:william.menendez@solunetgt.com">william.menendez@solunetgt.com</a> y <a href="mailto:clemenshemmerling@solunetgt.com">clemenshemmerling@solunetgt.com</a>
+          </p>
+        </div>
+      </div>
     </section>
     <footer class="footer">
       <div class="footer-div">
