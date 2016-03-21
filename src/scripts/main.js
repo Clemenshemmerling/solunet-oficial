@@ -20,6 +20,8 @@
     function onClickMenu() {
       navbarMenu.classList.toggle('header-menu-list--show');
     }
+
   }
+
 
 }());
