@@ -6,46 +6,32 @@
   &-picture
     display none
 
-  &-divcontent
+  &-form
+    display flex
+    flex-direction column
     padding 1rem
 
-    &-form
-      display flex
-      flex-direction column
+    &-input
+      border-radius 15px
+      font-size 1.5rem
+      margin-bottom 5px
+      border none
 
-      &-input
-        border-radius 15px
-        font-size 1.5rem
-        margin-bottom 5px
-        border none
+    &-textarea
+      border-radius 15px
+      font-size 1.5rem
+      margin-bottom 5px
+      border none
+      min-height 10rem
 
-      &-textarea
-        border-radius 15px
-        font-size 1.5rem
-        margin-bottom 5px
-        border none
-        min-height 10rem
-
-      &-button
-        color #FAFAFA
-        background-color #3A3A3C
-        border none
-        border-radius 8px
-        max-width 6rem
-        min-height 2.5rem
-        margin-left auto
-
-    &-divtext
+    &-button
       color #FAFAFA
-      &-h1
-        font-size 1.5rem
-
-      p
-        margin 0.5rem 0
-
-        a
-          text-decoration none
-          color #FAFAFA
+      background-color #3A3A3C
+      border none
+      border-radius 8px
+      max-width 6rem
+      min-height 2.5rem
+      margin-left auto
 
 @media (min-width 768px)
   .sectionfour
@@ -54,6 +40,17 @@
 
     &-picture
       display block
+      max-height 400px
+      min-width 105px
+      overflow hidden
+      background-color #5B7785
+      img
+        margin-top 4rem
+        max-width 100%
+
+    &-form
+      margin: 0 auto
+      min-width 25rem
 
 @media (min-width 960px)
   .sectionfour
@@ -62,23 +59,14 @@
 @media (min-width 1000px)
   .sectionfour
     margin 1rem 6rem
-    &-divcontent
-      display flex
-      flex-direction row
-      &-form
-        margin 2rem 0 0 3rem
-        min-width 300px
-
-      &-divtext
-        margin 2rem 2rem
+    &-form
+      margin 0 auto
+      min-width 400px
 
 @media (min-width 1280px)
   .sectionfour
-    margin 1rem 14rem 1rem 12rem
+    margin 0 14rem 1rem 12rem
 
 @media (min-width 1440px)
   .sectionfour
-    margin 1rem 14rem 1rem 13rem
-    &-divcontent
-      &-divtext
-        margin 2rem 3rem
+    margin 0 14rem 1rem 13rem
