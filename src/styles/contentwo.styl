@@ -55,6 +55,20 @@
 
         img
           width 100%
+          
+  &-hide--show
+    height 180px
+    background-color #899446
+    p 
+      margin 2rem 2rem 0 1rem
+      font-size 1rem
+        
+  &-hidetwo--show
+    height 180px
+    background-color #178989
+    p 
+      margin 1rem 2rem 0 1rem
+      font-size 0.9rem
 
 @media (min-width 768px)
   .sectTwo
@@ -116,11 +130,13 @@
     display flex
     flex-direction row
     justify-content center
+    flex-wrap wrap
 
     &-divOne
       max-height 410px
       max-width 410px
       margin 0 1rem 0 0
+      order 1
 
       &-h1
         margin-bottom 1rem
@@ -142,11 +158,17 @@
           margin 0
           img
             max-width 100%
+      
+    &-hide--show
+      min-width 300px
+      order 3
+    
 
     &-divTwo
       max-height 410px
       min-width 410px
       margin 0
+      order 2
 
       &-divtext
         display flex
@@ -157,6 +179,10 @@
           max-height 191px
           img
             max-width 100%
+            
+    &-hidetwo--show
+      min-width 300px
+      order 4  
 
 @media (min-width 1100px)
   .sectTwo
