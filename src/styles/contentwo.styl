@@ -23,11 +23,13 @@
         margin 1rem 1rem 1rem 2rem
         li
           margin-bottom 0.5rem
+          
+  &-divOne:hover
+      background-color grey
 
   &-divTwo
     background-color #19BCBC
     margin-top 1rem
-
 
     &-h1
       width 100%
@@ -55,6 +57,9 @@
 
         img
           width 100%
+          
+  &-divTwo:hover
+      background-color grey
           
   &-hide--show
     height 180px
@@ -101,7 +106,7 @@
 
           img
             display block
-            width 100%
+            width 100% 
 
     &-divTwo
       margin 1rem 2rem 0 2rem
@@ -124,6 +129,15 @@
         &-picture
           max-height 220px
           max-width  360px
+          
+    &-hide--show
+      margin 0 2rem 0 2rem
+      height 100px
+      
+    &-hidetwo--show
+      margin 0 2rem 0 2rem
+      height 100px
+      font-size 1rem
 
 @media (min-width 950px)
   .sectTwo
@@ -160,9 +174,12 @@
             max-width 100%
       
     &-hide--show
-      min-width 300px
+      max-width 410px
+      height 150px
       order 3
-    
+      margin 0 1rem 0 0
+      p 
+        margin 1rem 2rem 0 1rem    
 
     &-divTwo
       max-height 410px
@@ -181,8 +198,10 @@
             max-width 100%
             
     &-hidetwo--show
-      min-width 300px
-      order 4  
+      max-width 410px
+      height 150px
+      order 4 
+      margin 0 
 
 @media (min-width 1100px)
   .sectTwo
@@ -216,8 +235,10 @@
           margin-top 1rem
           img
             max-width 100%
-    &-divOne:hover
-      background-color grey
+            
+    &-hide--show
+      min-width 550px
+      margin 0 1rem 0 0
 
     &-divTwo
       max-height 270px
@@ -233,3 +254,8 @@
 
         &-picture
           margin-top 1.3rem
+          
+    &-hidetwo--show
+      min-width 636px
+      margin 0
+      
