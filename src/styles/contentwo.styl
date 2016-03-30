@@ -25,7 +25,7 @@
           margin-bottom 0.5rem
           
   &-divOne:hover
-      background-color grey
+    background-color grey
 
   &-divTwo
     background-color #19BCBC
@@ -61,19 +61,27 @@
   &-divTwo:hover
       background-color grey
           
-  &-hide--show
-    height 180px
-    background-color #899446
-    p 
-      margin 2rem 2rem 0 1rem
-      font-size 1rem
+  &-hide
+    height 0
+    transition height .3s ease
+    overflow hidden
+    &--show
+      height 180px
+      background-color #899446
+      p 
+        margin 2rem 2rem 0 1rem
+        font-size 1rem
         
-  &-hidetwo--show
-    height 180px
-    background-color #178989
-    p 
-      margin 1rem 2rem 0 1rem
-      font-size 0.9rem
+  &-hidetwo
+    height 0
+    transition height .3s ease
+    overflow hidden
+    &--show
+      height 180px
+      background-color #178989
+      p 
+        margin 1rem 2rem 0 1rem
+        font-size 0.9rem
 
 @media (min-width 768px)
   .sectTwo
@@ -130,26 +138,27 @@
           max-height 220px
           max-width  360px
           
-    &-hide--show
-      margin 0 2rem 0 2rem
-      height 100px
+    &-hide
+      &--show
+        margin 0 2rem 0 2rem
+        height 100px
       
-    &-hidetwo--show
-      margin 0 2rem 0 2rem
-      height 100px
-      font-size 1rem
+    &-hidetwo
+      &--show
+        margin 0 2rem 0 2rem
+        height 100px
+        font-size 1rem
 
 @media (min-width 950px)
   .sectTwo
     display flex
     flex-direction row
-    justify-content center
     flex-wrap wrap
 
     &-divOne
       max-height 410px
       max-width 410px
-      margin 0 1rem 0 0
+      margin 0 1rem 0 6rem
       order 1
 
       &-h1
@@ -173,18 +182,20 @@
           img
             max-width 100%
       
-    &-hide--show
-      max-width 410px
-      height 150px
-      order 3
-      margin 0 1rem 0 0
-      p 
-        margin 1rem 2rem 0 1rem    
+    &-hide
+      &--show
+        max-width 410px
+        height 150px
+        order 3
+        margin 0
+        margin-left 6rem
+        p 
+          margin 1rem 2rem 0 1rem    
 
     &-divTwo
       max-height 410px
       min-width 410px
-      margin 0
+      margin 0 5rem 0 0
       order 2
 
       &-divtext
@@ -197,11 +208,13 @@
           img
             max-width 100%
             
-    &-hidetwo--show
-      max-width 410px
-      height 150px
-      order 4 
-      margin 0 
+    &-hidetwo
+      &--show
+        max-width 410px
+        height 150px
+        order 4 
+        margin-left auto
+        margin-right 93px 
 
 @media (min-width 1100px)
   .sectTwo
@@ -236,9 +249,10 @@
           img
             max-width 100%
             
-    &-hide--show
-      min-width 550px
-      margin 0 1rem 0 0
+    &-hide        
+      &--show
+        min-width 550px
+        margin 0 1rem 0 0
 
     &-divTwo
       max-height 270px
@@ -255,7 +269,8 @@
         &-picture
           margin-top 1.3rem
           
-    &-hidetwo--show
-      min-width 636px
-      margin 0
+    &-hidetwo
+      &--show
+        min-width 636px
+        margin 0
       
