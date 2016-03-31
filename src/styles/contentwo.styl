@@ -149,16 +149,21 @@
         height 100px
         font-size 1rem
 
-@media (min-width 950px)
+         
+
+     
+
+@media (min-width 1100px)
   .sectTwo
     display flex
     flex-direction row
     flex-wrap wrap
+    justify-content center
 
     &-divOne
       max-height 410px
-      max-width 410px
-      margin 0 1rem 0 6rem
+      max-width 445px
+      margin 0 1rem 0 0
       order 1
 
       &-h1
@@ -175,7 +180,7 @@
           order 2
 
         &-pict
-          max-width 410px
+          max-width 445px
           max-height 160px
           order 1
           margin 0
@@ -184,18 +189,19 @@
       
     &-hide
       &--show
-        max-width 410px
+        max-width 445px
         height 150px
         order 3
         margin 0
         margin-left 6rem
+        margin-right auto
         p 
           margin 1rem 2rem 0 1rem    
 
     &-divTwo
       max-height 410px
-      min-width 410px
-      margin 0 5rem 0 0
+      min-width 445px
+      margin 0 2rem 0 0
       order 2
 
       &-divtext
@@ -203,29 +209,32 @@
         flex-direction column
 
         &-picture
-          max-width 410px
+          max-width 450px
           max-height 191px
           img
             max-width 100%
             
     &-hidetwo
       &--show
-        max-width 410px
+        max-width 445px
         height 150px
         order 4 
         margin-left auto
-        margin-right 93px 
+        margin-right 98px 
 
-@media (min-width 1100px)
+
+@media (min-width 1200px)
   .sectTwo
     display flex
     flex-direction row
     justify-content center
+    
 
     &-divOne
       max-height 270px
       min-width 550px
       margin 0 1rem 0 0
+      order 1
 
       &-h1
         margin 1rem 1rem
@@ -252,12 +261,16 @@
     &-hide        
       &--show
         min-width 550px
-        margin 0 1rem 0 0
+        margin 0 
+        margin-left 1rem
+        margin-right auto
+        order 3
 
     &-divTwo
       max-height 270px
-      min-width 550px
+      max-width 550px
       margin 0
+      order 2
 
       &-divtext
         display flex
@@ -271,6 +284,9 @@
           
     &-hidetwo
       &--show
-        min-width 636px
+        max-width 550px
         margin 0
+        margin-left auto
+        margin-right 1rem
+        order 4
       
