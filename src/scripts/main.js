@@ -16,16 +16,19 @@
     var hide = document.getElementById('hide');
     var divTwo = document.getElementById('divTwo');
     var hidetwo = document.getElementById('hidetwo');
+    var menuLink = document.getElementById('menuLink');
 
     btnMenu.addEventListener('click', onClickMenu);
     divOne.addEventListener('click', onClickSect);
-    divTwo.addEventListener('click', onClickSectwo)
+    divTwo.addEventListener('click', onClickSectwo);
+
 
     loadCSS('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css');
     loadCSS('https://fonts.googleapis.com/css?family=Muli|Roboto');
 
     function onClickMenu() {
       navbarMenu.classList.toggle('header-menu-list--show');
+      menuLink.classList.toggle('header-menu-list--show');
     }
 
     function onClickSect(){
@@ -38,12 +41,19 @@
 
     $('#logo a').offsetScroller({offsetPixels: 182});
     $('#navbarMenu a').offsetScroller({offsetPixels: 182});
-     $('.box a').offsetScroller({animationSpeed: 2000});
+    $('.box a').offsetScroller({animationSpeed: 2000});
      // to enable for all anchor links...
      //$('a[href*=#]:not([href=#])').offsetScroller({offsetPixels:92});
-     $().offsetScroller.scrollToHash(window.location.hash, {offsetPixels: 92});
+    $().offsetScroller.scrollToHash(window.location.hash, {offsetPixels: 92});
 
   }
+
+$(window).load(function(){
+  $("#preloader").fadeOut(3000,function() {
+  $(this).remove();
+  $("body").css({"overflow-y":"auto"}); });
+})
+
 
 }());
 
