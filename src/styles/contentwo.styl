@@ -154,10 +154,76 @@
         margin 0 2rem 0 2rem
         height 100px
         font-size 1rem
+        
+@media (min-width 1024px)
+  .sectTwo
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    justify-content center
 
-         
+    &-divOne
+      max-height 410px
+      max-width 445px
+      margin 0 1rem 0 0
+      order 1
 
-     
+      &-h1
+        margin-bottom 1rem
+
+      &-divtext
+        display flex
+        flex-direction column
+
+        &-ul
+          max-width 100%
+          max-height 10px
+          margin 1rem 0 7rem 2rem
+          order 2
+
+        &-pict
+          max-width 445px
+          max-height 160px
+          order 1
+          margin 0
+          img
+            max-width 100%
+      
+    &-hide
+      &--show
+        max-width 445px
+        height 150px
+        order 3
+        margin 0
+        margin-left 43px 
+        margin-right auto
+        p 
+          margin 1rem 2rem 0 1rem    
+
+    &-divTwo
+      max-height 410px
+      min-width 445px
+      margin 0 2rem 0 0
+      order 2
+
+      &-divtext
+        display flex
+        flex-direction column
+
+        &-picture
+          max-width 450px
+          max-height 191px
+          img
+            max-width 100%
+            
+    &-hidetwo
+      &--show
+        max-width 445px
+        height 150px
+        order 4 
+        margin-left auto
+        margin-right 75px 
+              
 
 @media (min-width 1100px)
   .sectTwo
@@ -199,7 +265,7 @@
         height 150px
         order 3
         margin 0
-        margin-left 6rem
+        margin-left 5rem
         margin-right auto
         p 
           margin 1rem 2rem 0 1rem    
@@ -226,7 +292,28 @@
         height 150px
         order 4 
         margin-left auto
-        margin-right 98px 
+        margin-right 114px 
+        
+@media (min-width 1200px)
+  .sectTwo
+  
+    &-hide
+      &--show
+        max-width 445px
+        height 150px
+        order 3
+        margin 0
+        margin-left 5rem
+        margin-right auto
+            
+    &-hidetwo
+      &--show
+        max-width 445px
+        height 150px
+        order 4 
+        margin-left auto
+        margin-right 123px   
+    
 
 
 @media (min-width 1200px)
