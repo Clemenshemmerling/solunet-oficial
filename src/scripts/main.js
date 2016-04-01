@@ -49,7 +49,7 @@
   }
 
 $(window).load(function(){
-  $("#preloader").fadeOut(3000,function() {
+  $("#preloader").fadeOut(2500,function() {
   $(this).remove();
   $("body").css({"overflow-y":"auto"}); });
 })
