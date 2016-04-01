@@ -36,6 +36,7 @@
       hidetwo.classList.toggle('sectTwo-hidetwo--show');
     }
 
+    $('#logo a').offsetScroller({offsetPixels: 182});
     $('#navbarMenu a').offsetScroller({offsetPixels: 182});
      $('.box a').offsetScroller({animationSpeed: 2000});
      // to enable for all anchor links...
