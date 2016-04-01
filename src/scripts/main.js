@@ -1,6 +1,7 @@
 (function () {
   var loadCSS = require('./lib/loadCSS');
   var onScroll = require('./lib/onScroll');
+  var scrollToHash = require('./lib/jquery-offset-scroller');
 
   document.addEventListener('DOMContentLoaded', onDOMLoad);
 
@@ -34,6 +35,12 @@
     function onClickSectwo(){
       hidetwo.classList.toggle('sectTwo-hidetwo--show');
     }
+
+    $('#navbarMenu a').offsetScroller({offsetPixels: 182});
+     $('.box a').offsetScroller({animationSpeed: 2000});
+     // to enable for all anchor links...
+     //$('a[href*=#]:not([href=#])').offsetScroller({offsetPixels:92});
+     $().offsetScroller.scrollToHash(window.location.hash, {offsetPixels: 92});
 
   }
 
