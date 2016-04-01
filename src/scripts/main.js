@@ -16,7 +16,8 @@
     var hide = document.getElementById('hide');
     var divTwo = document.getElementById('divTwo');
     var hidetwo = document.getElementById('hidetwo');
-    var menuLink = document.getElementById('menuLink');
+    var close = document.getElementsByClassName('header-menu-list-item');
+    var contador = 1;
 
     btnMenu.addEventListener('click', onClickMenu);
     divOne.addEventListener('click', onClickSect);
@@ -28,7 +29,6 @@
 
     function onClickMenu() {
       navbarMenu.classList.toggle('header-menu-list--show');
-      menuLink.classList.toggle('header-menu-list--show');
     }
 
     function onClickSect(){
@@ -39,6 +39,10 @@
       hidetwo.classList.toggle('sectTwo-hidetwo--show');
     }
 
+    $('.header-menu-list-item').click(function (){
+      onClickMenu();
+    });
+
     $('#logo a').offsetScroller({offsetPixels: 182});
     $('#navbarMenu a').offsetScroller({offsetPixels: 182});
     $('.box a').offsetScroller({animationSpeed: 2000});
@@ -48,12 +52,11 @@
 
   }
 
-$(window).load(function(){
-  $("#preloader").fadeOut(2500,function() {
-  $(this).remove();
-  $("body").css({"overflow-y":"auto"}); });
-})
-
+  $(window).load(function(){
+    $("#preloader").fadeOut(2500,function() {
+    $(this).remove();
+    $("body").css({"overflow-y":"auto"}); });
+  })
 
 }());
 
